@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relato de Avistamento - Protocolo Z-1</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../icones/favicon.png">
+    <style>
+        /* Ajuste específico para alinhar rádio e checkbox sem quebrar a centralização global */
+        .alinhamento-opcoes {
+            display: inline-block; /* Faz o bloco ter o tamanho apenas do conteúdo */
+            text-align: left; /* Alinha os itens à esquerda dentro do bloco */
+            margin: 10px 0;
+        }
+        
+        input[type="text"], input[type="email"], input[type="date"], select, textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 8px;
+            margin-top: 5px;
+            background-color: #333;
+            color: white;
+            border: 1px solid #ffca28;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #ffca28;
+            color: #222;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #ffb300;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobrevivencia.html">Guia Visual</a></li>
+                <li><a href="contato.html">Relato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Relatório de Avistamento de Máquinas</h1>
+        <p>Use este formulário criptografado para enviar informações à resistência.</p>
+
+        <form action="#" method="post" id="form-relato">
+            
+            <label for="nome">Identificação do Sobrevivente:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Ex: John Connor" required>
+            <br><br>
+
+            <label for="email">Canal de Contato (E-mail):</label><br>
+            <input type="email" id="email" name="email" placeholder="contato@resistencia.com">
+            <br><br>
+
+            <label for="data">Data do Avistamento:</label><br>
+            <input type="date" id="data" name="data">
+            <br><br>
+
+            <label for="tipo">Tipo de Unidade Identificada:</label><br>
+            <select id="tipo" name="tipo">
+                <option value="sentinela">Drone Sentinela</option>
+                <option value="androide">Andróide de Combate</option>
+                <option value="aranha">Robô-Aranha</option>
+                <option value="outro">Unidade Não Identificada</option>
+            </select>
+            <br><br>
+
+            <p>Nível de Agressividade da Máquina:</p>
+            <div class="alinhamento-opcoes">
+                <input type="radio" id="baixo" name="agressividade" value="baixo">
+                <label for="baixo">Baixo (Patrulha)</label><br>
+                <input type="radio" id="medio" name="agressividade" value="medio">
+                <label for="medio">Médio (Alerta)</label><br>
+                <input type="radio" id="alto" name="agressividade" value="alto">
+                <label for="alto">Alto (Ataque Imediato)</label>
+            </div>
+            <br><br>
+
+            <p>Equipamentos que você possui no momento:</p>
+            <div class="alinhamento-opcoes">
+                <input type="checkbox" id="gps" name="item" value="gps">
+                <label for="gps">Localizador GPS</label><br>
+                <input type="checkbox" id="emp" name="item" value="emp">
+                <label for="emp">Dispositivo EMP</label><br>
+                <input type="checkbox" id="radio" name="item" value="radio">
+                <label for="radio">Rádio Amador</label>
+            </div>
+            <br><br>
+
+            <label for="mensagem">Descrição detalhada:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva aqui o que você viu..."></textarea>
+            <br><br>
+
+            <div class="botoes">
+                <button type="submit">Enviar Relatório</button>
+                <button type="reset" style="background-color: #666; color: white;">Limpar Dados</button>
+            </div>
+        </form>
+
+        <br><br>
+        <a href="../index.html">Voltar para a Página Principal</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Resistência Humana - Canal Seguro.</p>
+    </footer>
+</body>
+</html>

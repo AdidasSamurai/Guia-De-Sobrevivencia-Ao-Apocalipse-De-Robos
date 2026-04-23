@@ -1,0 +1,149 @@
+/* REQUISITO: Um ou mais arquivos de style.css, com no mínimo 10 parâmetros de texto/estilização no CSS. */
+
+/* Configuração Geral do Corpo (Parâmetros 1, 2, 3, 4) */
+body {
+    background-color: #222; /* Fundo escuro pós-apocalíptico */
+    color: #f0f0f0; /* Texto claro para leitura */
+    font-family: 'Courier New', monospace; /* Fonte tipo máquina/industrial */
+    margin: 20px;
+    /* ADIÇÃO PARA CENTRALIZAR TUDO NO SITE */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Títulos Centrais (Parâmetro 5) */
+h1, h2, h3 {
+    text-align: center; /* Centralizar títulos hierárquicos */
+}
+
+/* Título H1 (Parâmetro 6) */
+h1 {
+    color: #ffca28; /* Cor amarela para alerta */
+    margin-top: 50px; /* Margem superior maior */
+}
+
+/* Título H2 (Parâmetro 7) */
+h2 {
+    color: #ffca28; /* Amarelo ligeiramente mais fraco */
+    margin-top: -10px; /* Margem superior negativa para aproximar do H1 */
+}
+
+/* Parágrafos Longos (Parâmetros 8, 9) */
+p {
+    text-align: center; /* Mudamos de justify para center para combinar com o novo visual */
+    margin-bottom: 25px; /* Margem inferior para espaçamento */
+    max-width: 800px; /* Limita a largura para o texto não ficar esticado demais no centro */
+}
+
+/* Estilo do Menu (Parâmetro 10) */
+ul.menu {
+    list-style: none; /* Remover marcadores de lista */
+    display: flex; /* Exibir itens em linha */
+    justify-content: center; /* Centralizar o menu */
+    padding: 0; /* Remover padding */
+    margin: 0; /* Remover margin */
+}
+
+/* Itens do Menu (Parâmetro 11) */
+ul.menu li {
+    margin: 0 15px; /* Espaçamento entre os links */
+}
+
+/* Links do Menu (Parâmetro 12, 13, 14, 15) */
+ul.menu li a {
+    color: #82b1ff; /* Cor azul claro para links */
+    text-decoration: none; /* Sem sublinhado */
+    padding: 10px; /* Preenchimento interno */
+    background-color: #333; /* Fundo ligeiramente mais claro */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Hover do Menu (Parâmetro 16) */
+ul.menu li a:hover {
+    background-color: #444; /* Fundo mais escuro no hover */
+    color: #ffca28; /* Amarelo no hover */
+}
+
+/* Imagem de Entrada (Parâmetro 17) */
+.img-entrada {
+    display: block; /* Ocupa toda a largura */
+    width: 100%; /* Largura total */
+    max-width: 1000px; /* Limita a largura máxima para não estourar em telas grandes */
+    max-height: 400px; /* Altura máxima */
+    object-fit: cover; /* Ajustar imagem ao container */
+    margin-top: 20px; /* Espaçamento superior */
+    border: 5px solid #ffca28; /* Borda amarela industrial */
+}
+
+/* Estilo de Listas (Parâmetro 18) */
+ul, ol {
+    margin-bottom: 30px; /* Margem inferior para as listas */
+    list-style-position: inside; /* Marcadores dentro da área de texto */
+    text-align: left; /* Mantém o texto da lista alinhado à esquerda dentro do bloco centralizado */
+}
+
+/* Estilo de Tags Textuais Negrito/Strong (Parâmetro 19) */
+b, strong {
+    color: #e57373; /* Cor vermelha para ênfase forte */
+}
+
+/* Estilo de Tags Textuais Itálico/Emphasize (Parâmetro 20) */
+i, em {
+    color: #64b5f6; /* Cor azul claro para ênfase suave */
+}
+
+/* Estilo de Tags Textuais Sublinhado (Parâmetro 21) */
+u {
+    text-decoration-color: #ffca28; /* Cor do sublinhado */
+}
+
+/* Tabelas (Parâmetro EXTRA para centralização técnica) */
+table {
+    margin: 20px auto; /* Centraliza a tabela horizontalmente */
+    border-collapse: collapse;
+    background-color: #333;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ffca28;
+}
+
+/* Galeria e Mídias (Parâmetro EXTRA) */
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+video, audio {
+    display: block;
+    margin: 15px auto;
+}
+
+/* Código (Parâmetro 22) */
+code {
+    background-color: #111; /* Fundo muito escuro para código */
+    padding: 2px 5px; /* Preenchimento interno pequeno */
+    border-radius: 3px; /* Cantos arredondados pequenos */
+}
+
+/* Código em Bloco (Pre) (Parâmetro 23) */
+pre {
+    background-color: #111; /* Fundo muito escuro */
+    padding: 10px; /* Preenchimento interno maior */
+    border: 1px solid #ffca28; /* Borda amarela industrial */
+    overflow: auto; /* Adicionar barra de rolagem se necessário */
+    margin-bottom: 30px; /* Margem inferior */
+    text-align: left; /* Mantém o código alinhado à esquerda */
+    width: fit-content; /* Ajusta o fundo ao tamanho do código */
+}
+
+/* Estilo de Outras Tags Textuais (Parâmetro 24) */
+small { color: #aaaaaa; } /* Pequeno mais escuro */
+del { text-decoration-color: #e57373; } /* Deletado com risco vermelho */
+s { text-decoration-color: #aaaaaa; } /* Riscado mais escuro */
